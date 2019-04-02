@@ -1,0 +1,119 @@
+@font-face {
+	font-family: WeblySleek;
+	src: url(font/weblysleekuisl.ttf);
+}
+
+body{
+	margin: 0;
+	font-family: WeblySleek;
+}
+
+#map{
+    height: 350px;
+    width: 500px;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.sub-wrap{
+    width: 80%;
+}
+
+.user1{
+    display: flex;
+    align-items: center;
+    margin: 30px;
+}
+
+.userdetail{
+    margin: 30px;
+}
+
+.eventku{
+    display: flex;
+    align-items: center;
+}
+
+.event{
+    margin: 30px;
+    text-align: right;
+}
+
+.venue{
+    margin: 30px;
+    display: flex;
+}
+
+h5{
+    font-size: 15px;
+    margin-top: 30px;
+    font-weight: 1000;
+    letter-spacing: 2px;
+}
+
+h3{
+    letter-spacing: 1px;
+    font-size: 24px;
+}
+
+h2{
+    font-size: 36px;
+    letter-spacing: 1px;
+    color: rgb(233, 152, 3);
+
+}
+
+
+
+.avatar{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-right: 40px;
+}
+
+.icon{
+    margin-bottom: 10px;
+}
+.avatar2{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+}
+
+.btn{
+    width: 150px;
+    margin-top: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.apply-section
+{
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+@media (max-width:650px) {
+    .user1{
+        flex-direction: column;
+    }
+    .userdetail{
+        margin: 0;
+    }
+
+    .eventku{
+        flex-direction: column-reverse;
+    }
+    }

@@ -1,0 +1,163 @@
+@font-face {
+	font-family: WeblySleek;
+	src: url(../font/weblysleekuisl.ttf);
+}
+
+body{
+	margin: 0;
+	font-family: WeblySleek;
+}
+
+h3{
+    margin: 0;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 7px;
+    border-radius: 5px;   
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%; 
+    background:#FF9C00 ;
+    cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #FF9C00;
+    cursor: pointer;
+  }
+
+  .form-buat-event{
+      background-color: rgba(0, 0, 0, 0.7);
+      color: white;
+      padding-right: 80px;
+      padding-left: 80px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+  }
+
+.slider1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+  .slidecontainer{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+  }
+
+  .btn{
+      outline: 10px;
+      margin-top: 20px;
+      width: 120px;
+      padding: 5px;
+      float: right;
+      letter-spacing: 1px;
+      font-weight: 500px;
+      font-size: 14px;
+      border: 1.5px solid white;
+  }
+
+  #rangePrimary{
+      background: none;
+      border: none;
+      color: #FF9C00;
+      text-align: center;
+      font-weight: 200;
+      font-size: 18px;
+      letter-spacing: 1px;
+      width: 100px;
+  }
+
+  .box-title{
+      letter-spacing: 5px;
+      font-size: 23px;
+  }
+
+  label{
+      letter-spacing: 2px;
+      font-size: 15px;
+      margin-top: 8px;
+      margin-bottom: 9px;
+  }
+
+  hr{
+      height: 2px;
+      margin-top: 8px;
+      margin-bottom: 30px;
+  }
+
+  .rupiah{
+      font-size: 18px;
+  }
+
+  #video-background {
+	/*  making the video fullscreen  */
+	  position: absolute;
+	  right: 0; 
+	  bottom: 0;
+	  min-width: 100%; 
+	  min-height: 100%;
+	  width: auto; 
+	  height: auto;
+	  z-index: -100;
+}
+
+.hcover{
+	background-image: url(../storage/images/hcover.jpg);
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+}
+
+::placeholder{
+    font-size: 15px;
+}
+
+option{
+    font-size: 12px;
+}
+
+.selected{
+    font-size: 12px;
+}
+
+@media (max-width:770px) {
+.form-buat-event{
+    width: 500px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+label{
+    letter-spacing: 2px;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 6px;
+}
+
+}

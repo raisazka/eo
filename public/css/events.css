@@ -1,0 +1,233 @@
+#filter{
+    margin-bottom:0px;
+}
+
+hr{
+    margin-top: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.1)
+}
+
+.content{
+    min-height: 72vh;
+}
+
+.fancy-card{
+    display: inline-block;
+    position: relative;
+    top: 40px;
+    left: 20px;
+    box-sizing: border-box;
+    margin-bottom: 75px;
+  }
+  
+  .fancy-card .top,
+  .fancy-card .middle,
+  .fancy-card .bottom{
+    position: relative;
+    border-radius: 3px;
+    overflow: hidden;
+    width: 230px;
+    height: 230px;
+    transition: transform 300ms linear-out;
+  }
+  .fancy-card .top{
+    z-index: 3;
+    transform: scale(1.0);
+    transition: transform 300ms cubic-bezier(0.22, 0.61, 0.36, 1);
+    background-image: url('https://static-1.gumroad.com/res/gumroad/assets/collections/food_and_cooking_thumb-34fb9ef316a7b01177529839891c3a03.jpg');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0px 1px 3px rgba(25,25,25,0.30);
+  }
+  .fancy-card .middle{
+    position: absolute;
+    background: #aaa;
+    top: 0px;
+    z-index: 2;
+    transform: rotate(0deg);
+    transition: transform 250ms cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  }
+  .fancy-card .bottom{
+    position: absolute;
+    background: #ccc;
+    top: 0px;
+    z-index: 1;
+    transform: rotate(0deg);
+    transition: transform 250ms cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  }
+  
+  .fancy-card .caption{
+    overflow: hidden;
+    background: rgba(255,255,255,0.75);
+    padding: 15px 20px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .fancy-card .caption .title{
+    color: #222;
+    margin: 0px 0px 15px 0px;
+    font-size: 1.4rem;
+    font-weight: bolder;
+  }
+  .fancy-card .caption .button{
+    display: inline-block;
+    color: #333;
+    text-decoration: none;
+    border: solid 1px #555;
+    padding: 7px 13px;
+    background-color: transparent;
+    transition: all 300ms ease-in;
+    margin: auto;
+    width: 60%;
+  }
+  
+  .fancy-card:hover .button{
+    background: rgba(0,0,0,0.8);
+    color: #fff;
+    border: 0px;
+  }
+
+  @font-face {
+    font-family: WeblySleek;
+    src: url(../font/weblysleekuil.ttf);
+}
+
+html, body{
+    margin: 0;
+    font-family: WeblySleek;
+}
+
+* {
+	transition-property: all;
+	transition-duration: .6s;
+	transition-timing-function: ease;
+  }
+
+.nav {
+    height: 58px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav > .nav-header {
+    display: inline;
+    padding-left: 20px;
+}
+
+.nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 22px;
+    color: #fff;
+    padding: 2px 10px 2px 10px;
+}
+
+.nav > .nav-btn {
+    display: none;
+}
+
+.nav > .nav-links {
+    padding-right: 30px;
+    font-size: 16px;
+}
+
+.nav > .nav-links > a {
+    display: inline-block;
+    padding: 13px 15px 13px 15px;
+    text-decoration: none;
+    color: #efefef;
+}
+
+.nav > .nav-links > a:hover {
+    background-color: rgba(255, 156, 0, 0.5);
+}
+
+.nav > #nav-check {
+    display: none;
+}
+
+footer{
+	display: flex;
+	justify-content: space-between;
+	background-color: #1E1E1E;
+	align-items: center;
+	height: 80px;
+    padding: 30px;
+    color: white;
+    bottom: 0;
+    width: 100% !important;
+}
+
+.fmenu{
+    display: flex;
+    color: white;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-align: right;
+    padding-left: 40px;
+}
+
+.img-footer img{
+    width: 220px;
+}
+
+@media (max-width:600px) {
+
+    .nav > .nav-btn {
+        display: inline-block;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+
+    .nav > .nav-btn > label {
+        display: inline-block;
+        height: 30px;
+        padding: 13px;
+    }
+
+    .nav > .nav-btn > label:hover {
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .nav > .nav-btn > label > span {
+        display: block;
+        width: 25px;
+        height: 10px;
+        border-top: 2px solid #eee;
+    }
+
+    .nav > .nav-links {
+        position: absolute;
+        display: block;
+        width: 100%;
+        background-color: #333;
+        height: 0px;
+        transition: all 0.3s ease-in;
+        overflow-y: hidden;
+        top: 50px;
+        left: 0px;
+    }
+
+    .nav > .nav-links > a {
+        display: block;
+        width: 100%;
+    }
+
+    .nav > #nav-check:not(:checked) + .nav-links {
+        height: 0px;
+    }
+
+    .nav > #nav-check:checked + .nav-links {
+        height: calc(100vh - 50px);
+        overflow-y: auto;
+    }
+}

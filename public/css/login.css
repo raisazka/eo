@@ -1,0 +1,318 @@
+@font-face {
+	font-family: weeblysleekuil;
+	src: url(../font/weblysleekuil.ttf);
+}
+
+@font-face
+{
+	font-family: weeblysleekuib;
+	src: url(../font/weblysleekuisb.ttf)
+}
+
+body
+{
+	color: white;
+	font-family: weeblysleekuil;
+}
+
+.header-cover
+{
+	background-image: url("../storage/images/background.jpg");
+	background-size: cover;
+	width: 100%;
+	height: 100vh;
+}
+
+.body-container
+{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.left-container
+{
+	width: 590px;
+	margin: 0px 0px 0px 40px;
+}
+
+.right-container
+{
+	width: 450px;
+}
+
+.logo-container
+{
+	display: flex;
+	justify-content: center;
+}
+
+.logo
+{
+	height: 100%;
+	width: 200px;
+	margin: 40px 0px 60px 0px;
+}
+
+.form-login
+{
+	padding: 16px 32px 0px 32px;
+	border-style: solid;
+	width: 400px;
+	border-width: 0.09rem;
+	border-color: #FF9C00;
+	border-radius: 2rem;
+	background: rgba(0, 0, 0, 0.473);
+}
+
+.form-control
+{
+	background-color: transparent;
+	border-bottom-color: white;
+	border-style: none none solid none;
+	border-width: 0.08rem;
+	border-radius: 0%;
+	margin-bottom: 0px 0px 16px 0px;
+	font-size: 0.9rem;
+}
+
+.form-login-heading
+{
+	text-decoration-line: underline;
+	text-underline-position: under;
+	border-width: 0.08rem;
+	text-align: center;
+	margin: 0px 0px 48px 0px;
+	text-decoration-color: #FF9C00;
+	font-size: 1.4rem;
+	font-family: weeblysleekuib;
+}
+
+.form-register
+{
+	text-align: center;
+	margin-top: 3rem;
+	margin-bottom: .5rem;
+	font-size: 0.9rem;
+}
+
+.form-join-partner
+{
+	text-align: center;
+	margin-top: 3rem;
+	font-size: 0.9rem;
+}
+
+.left-arrow
+{
+	width: 1.6rem;
+}
+
+.text1
+{
+	margin: 0px 0px 32px 0px;
+	font-size: 2.2rem;
+	letter-spacing: 0.2rem;
+}
+
+b
+{
+	font-family: weeblysleekuib;
+}
+
+.btn1
+{
+	border-color: #FF9C00;
+	font-size: 0.9rem;
+	width: 8rem;
+	padding: 10px;
+}
+
+.btn1:hover
+{
+	background-color: transparent;
+	color: white;
+}
+.btn2
+{
+	border-radius: 0%;
+	border-color: #FF9C00;
+	background-color: #FF9C00;
+	font-size: 0.9rem;
+	width: 8rem;
+	padding: 0.2rem;
+	color: white;
+}
+
+#inputEmail[type=email]:read-write
+{
+	color: white;
+}
+
+#inputPassword[type=password]:read-write
+{
+	color: white;
+}
+
+#inputEmail:focus {
+	background-color: transparent;
+	box-shadow: none;
+}
+
+#inputPassword:focus {
+	background-color: transparent;
+	box-shadow: none;
+}
+
+
+@media screen and (max-width: 700px)
+{
+	.header-cover
+	{
+		width: 100%;
+		height: 160vh;
+		background-size: cover;
+	}
+
+	.body-container
+	{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.left-container
+	{
+		margin: 0px 0px 80px 0px;
+		text-align: center;
+	}
+	
+	.right-container
+	{
+		width: 400px;
+	}
+	
+	.text1
+	{
+		margin: 0px 0px 60px 0px;
+		font-size: 20pt;
+		letter-spacing: 0.2rem;
+	}
+}
+
+@media screen and (max-width: 600px)
+{
+	.header-cover
+	{
+		width: 100%;
+		height: 160vh;
+		background-size: cover;
+	}
+
+	.body-container
+	{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.left-container
+	{
+		width: 570px;
+		margin: 0px 0px 80px 0px;
+		text-align: center;
+	}
+	
+	.right-container
+	{
+		width: 400px;
+	}
+	
+	.text1
+	{
+		margin: 0px 50px 80px 50px;
+		font-size: 20pt;
+		letter-spacing: 0.2rem;
+	}
+}
+
+@media screen and (max-width: 550px)
+{
+	.header-cover
+	{
+		width: 100%;
+		height: 160vh;
+		background-size: cover;
+	}
+
+	.body-container
+	{
+		display: flex;
+		flex-direction: column;
+
+	}
+
+	.left-container
+	{
+		width: 470px;
+		margin: 0px 0px 80px 0px;
+		text-align: center;
+	}
+	
+	.right-container
+	{
+		width: 400px;
+	}
+	
+	.text1
+	{
+		margin: 0px 0px 80px 0px;
+		font-size: 20pt;
+		letter-spacing: 0.2rem;
+	}
+}
+
+
+@media screen and (max-width: 500px)
+{
+	.header-cover
+	{
+		width: 100%;
+		height: 160vh;
+		background-size: cover;
+	}
+
+	.body-container
+	{
+		display: flex;
+		flex-direction: column;
+
+	}
+
+	.left-container
+	{
+		width: 430px;
+		margin: 0px 0px 60px 0px;
+		text-align: center;
+	}
+	
+	.right-container
+	{
+		width: 380px;
+	}
+	
+	.text1
+	{
+		margin: 0px 0px 80px 0px;
+		font-size: 20pt;
+		letter-spacing: 0.2rem;
+	}
+	.form-login
+	{
+		padding: 16px 32px 0px 32px;
+		border-style: solid;
+		width: 380px;
+		border-width: 0.09rem;
+		border-color: #FF9C00;
+		border-radius: 2rem;
+		background: rgba(0, 0, 0, 0.473);
+	}
+}
